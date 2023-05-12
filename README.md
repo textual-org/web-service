@@ -10,7 +10,7 @@ npm install
 
 ## Running
 
-Running in development mode with hot reloading on port 3001:
+Running in development mode with hot reloading on port 3000:
 
 ```bash
 npm run dev
@@ -19,7 +19,7 @@ npm run dev
 Running in production mode on port 3000:
 
 ```bash
-uvicorn app:app --port 3000
+npm start
 ```
 
 ## Terraform
