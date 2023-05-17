@@ -7,10 +7,10 @@
     "dev": "dotenv -e .env -- next dev",
     "lint": "dotenv -e .env -- next lint",
     "start": "dotenv -e .env -- next start",
-    "tf:apply": "dotenv -e .env -- terraform apply",
-    "tf:destroy": "dotenv -e .env -- terraform destroy",
-    "tf:init": "dotenv -e .env -- terraform init",
-    "tf:plan": "dotenv -e .env -- terraform plan"
+    "tf:apply": "cd terraform && dotenv -e ../.env -- terraform apply",
+    "tf:destroy": "cd terraform && dotenv -e ../.env -- terraform destroy",
+    "tf:init": "cd terraform && dotenv -e ../.env -- terraform init",
+    "tf:plan": "cd terraform && dotenv -e ../.env -- terraform plan"
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.3.1",
@@ -43,6 +43,6 @@
   },
   "packageManager": "npm@9.5.0",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=16.0.0"
   }
 }

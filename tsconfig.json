@@ -22,7 +22,8 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@env": ["./src/env.mjs"]
+      "@env": ["./src/env.mjs"],
+      "@server/*": ["./src/server/*"],
     }
   },
   "include": [".eslintrc.js", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "./src/env.mjs"],
